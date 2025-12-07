@@ -1,9 +1,9 @@
 # 🎬 Movie Recommendation App
 Um projeto focado em resolver um problema comum: escolher um filme para assistir.
-O aplicativo entrega recomendações simples e rápidas, permite busca eficiente e usa dados atualizados da API pública do TMDB.
+A aplicação entrega recomendações simples e rápidas, permite busca eficiente e usa dados atualizados da API pública do TMDB.
 
-# 🚀 MVP Atual (Produto Mínimo Viável)
-O foco atual do projeto é entregar a experiência central de busca e recomendação de filmes. O MVP contém as seguintes funcionalidades essenciais:
+# 🚀 MVP Atual 
+O MVP contém as seguintes funcionalidades essenciais:
 
 - Recomendação de Filmes: Tela inicial simples exibindo filmes baseados em popularidade (o que está em alta no momento).
   
@@ -16,7 +16,7 @@ O foco atual do projeto é entregar a experiência central de busca e recomenda�
 - Detalhes Básicos: Exibição do título, sinopse, e nota/avaliação do filme.
 
 # 🛠️ Tecnologias Utilizadas
-- Frontend: React (ou a framework que você estiver usando)
+- Frontend: NextJS
   
 - Linguagem: JavaScript/TypeScript
   
