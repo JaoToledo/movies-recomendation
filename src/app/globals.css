@@ -5,3 +5,10 @@
 .font-poppins {
   font-family: var(--font-poppins), sans-serif;
 }
+
+@theme {
+  --color-header-bg: #1F1E1E;
+  --color-yellow-alert: #FFF600;
+  --color-bermuda: #78dcca;
+  --color-linear-gray: #1F1F1F;
+}
