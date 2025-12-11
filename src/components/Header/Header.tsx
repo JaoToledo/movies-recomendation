@@ -1,0 +1,9 @@
+export function Header() {
+  return (
+    <div 
+    data-testid="header"
+    className="flex bg-header-bg py-5 px-[280px] ">
+      
+    </div>
+  )
+} 
