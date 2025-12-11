@@ -3,7 +3,7 @@ Um projeto focado em resolver um problema comum: escolher um filme para assistir
 A aplicação entrega recomendações simples e rápidas, permite busca eficiente e usa dados atualizados da API pública do TMDB.
 
 # 🚀 MVP Atual 
-O MVP contém as seguintes funcionalidades essenciais:
+O MVP terá as seguintes funcionalidades essenciais:
 
 - Recomendação de Filmes: Tela inicial simples exibindo filmes baseados em popularidade (o que está em alta no momento).
   
