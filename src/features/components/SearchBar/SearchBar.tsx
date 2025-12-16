@@ -1,4 +1,5 @@
 "use client"
+import { Typography } from "@/shared/components/Typography/Typography"
 import { useState } from "react"
 
 const moviesTitle = [
@@ -31,6 +32,7 @@ export function SearchBar() {
   return (
     <div className="">
       <input
+        className="border border-white rounded-[20px]"
         onChange={handleOnChange}
         onKeyDown={handleKeyDown}
         value={input}
