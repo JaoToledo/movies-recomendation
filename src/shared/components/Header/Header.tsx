@@ -10,9 +10,11 @@ export function Header() {
   return (
     <div 
     data-testid="header"
-    className="flex justify-center bg-header-bg py-5 px-[280px] "
+    className="bg-header-bg py-5"
     >
-      <SearchBar />
+      <div className="flex justify-center ">
+        <SearchBar />
+      </div>
     </div>
   )
 } 
