@@ -32,7 +32,7 @@ export function SearchBar() {
   return (
     <div className="">
       <input
-        className="bg-white border border-white rounded-[20px] h-10 w-full min-w-[556px]  "
+        className="bg-white border border-white rounded-[20px] h-10 w-full "
         onChange={handleOnChange}
         onKeyDown={handleKeyDown}
         value={input}
