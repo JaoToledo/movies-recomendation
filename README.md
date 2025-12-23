@@ -1,4 +1,4 @@
-# 🎬 Movie Recommendation App
+# 🎬 Movie Recommendation 
 Um projeto focado em resolver um problema comum: escolher um filme para assistir.
 A aplicação entrega recomendações simples e rápidas, permite busca eficiente e usa dados atualizados da API pública do TMDB.
 
