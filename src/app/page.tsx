@@ -1,3 +1,4 @@
+import { Highlight } from "@/components/Highlight/Highlight";
 import { Metadata } from "next"
 export const metadata: Metadata = {
   title: 'Home - Tudo sobre filmes'
@@ -5,8 +6,11 @@ export const metadata: Metadata = {
 
 export default function Home(){
   return(
-    <div className="h-screen bg-linear-to-b from-black to-linear-gray">
+    <div className="min-h-screen bg-linear-to-b from-linear-black to-linear-gray from-10%">
 
+      <div className="flex justify-center pt-20">
+        <Highlight />
+      </div>
     </div>
   );
 }
