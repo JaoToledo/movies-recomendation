@@ -1,6 +1,7 @@
 "use client"
 import './globals.css';
 import { Header } from '@/shared/components/HeaderComposition';
+import { FilterMovies } from '@/shared/components/HeaderComposition/filter/filterMovies';
 import {Poppins} from 'next/font/google'
 import { useState } from 'react'; 
 // import { useRouter } from 'next/router';
@@ -17,11 +18,6 @@ export default function RootLayout({
     }: Readonly<{
     children: React.ReactNode;
   }>) {
-
-
-//  function handleRedirect(search:string){
-//    route.route('')}
-    
    const [search, setSearch] = useState('');
   
   return (
@@ -31,15 +27,20 @@ export default function RootLayout({
       <body className={`${poppins.variable}`}>
         <Header.Root >
 
-          <div className="flex items-center w-full max-w-[556px]  ">
-          <Header.Input 
-          onSubmit={()=>{alert('Teste')}} 
-          onValueChange={(value)=>setSearch(value) } 
-          value={search}/>
-
-          <Header.SearchInputButton/>   
-          </div>
-          
+          <div className="flex items-center w-full max-w-[1000px]">
+            <div className="flex mx-auto w-full max-w-[556px]">
+              <Header.Input 
+              onSubmit={() => alert('Teste')}
+              onValueChange={(value) => setSearch(value)}
+              value={search}
+              />
+              <Header.SearchInputButton />
+            </div>
+        
+            <div className="">
+              <FilterMovies />
+            </div>
+          </div>  
         </Header.Root> 
         {children}
       </body>
