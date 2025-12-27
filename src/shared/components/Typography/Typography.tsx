@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { TypographyProps } from "./types";
 import { TypographyVariants } from "./variants";
 
@@ -14,7 +15,7 @@ export function Typography
     TypographyProps) {
         
         return (
-            <span className={`${TypographyVariants[variant]} ${className}`}>
+            <span className={clsx(TypographyVariants[variant], className)}>
                 {children}
             </span>
     )
