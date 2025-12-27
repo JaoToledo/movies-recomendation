@@ -13,7 +13,7 @@ export function Input({ onSubmit, onValueChange, value}:  {
      return (  
       <input
         className="
-        bg-white rounded-l-[20px] h-8 flex-1 outline-0 px-5 max-w-[556px]  shadow-[inset_0_0_10px_rgba(0,0,0,0.40)]  "
+        bg-white/95 rounded-l-[20px] h-8 flex-1 outline-0 px-5 max-w-[556px]  shadow-[inset_0_0_10px_rgba(0,0,0,0.40)]  "
 
         value={value} 
         onChange={(e) => onValueChange(e.target.value)}
