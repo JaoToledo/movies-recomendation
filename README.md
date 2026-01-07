@@ -111,7 +111,7 @@ export function SearchInputButton() {
 }
 ```
 
-E por fim, exportado para dentro do index da pasta do componente.
+Exportado para dentro do index da pasta do componente.
 
 ```
 "use client"
