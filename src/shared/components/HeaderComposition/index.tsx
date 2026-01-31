@@ -1,12 +1,12 @@
 "use client"
 
-import { Root } from './root/root'
+import { Root } from './HeaderMain/root'
 import { Input } from './input/input'
 import { SearchInputButton } from './searchInput/searchInputButton'
 import { FilterMovies } from './filter/filterMovies'
-import { HeaderContent } from './headerContent/headerContent'
-import { HeaderSearchWrapper } from './headerSearchWrapper/headerSearchWrapper'
-import { HeaderMain } from './headerMain/headerMain'
+import { HeaderContent } from './HeaderMain/headerContent'
+import { HeaderSearchWrapper } from './HeaderMain/headerSearchWrapper'
+import { HeaderMain } from './HeaderMain/headerMain'
 
   export const Header = {
   Root,

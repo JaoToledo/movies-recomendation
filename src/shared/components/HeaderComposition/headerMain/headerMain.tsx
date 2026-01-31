@@ -1,11 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import { HeaderSearchWrapper } from "../headerSearchWrapper/headerSearchWrapper"
+import { HeaderSearchWrapper } from "./headerSearchWrapper"
 import { Input } from "../input/input"
-import { Root } from "../root/root"
+import { Root } from "./root"
 import { SearchInputButton } from "../searchInput/searchInputButton"
-import { HeaderContent } from "../headerContent/headerContent"
+import { HeaderContent } from "./headerContent"
 import { FilterMovies } from "../filter/filterMovies"
 
 /**
