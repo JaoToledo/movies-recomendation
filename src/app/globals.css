@@ -14,3 +14,11 @@
   --color-linear-gray: #1F1F1F;
   --color-linear-black: #0C0C0C;
 }
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
