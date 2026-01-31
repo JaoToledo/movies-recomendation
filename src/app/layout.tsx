@@ -1,5 +1,5 @@
 import './globals.css';
-import { HeaderMain } from '@/shared/components/HeaderComposition/headerMain/headerMain';
+import { HeaderMain } from '@/shared/components/HeaderComposition/HeaderMain/headerMain';
 import {Poppins} from 'next/font/google'
 
 const poppins = Poppins({
