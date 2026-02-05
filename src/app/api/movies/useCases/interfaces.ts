@@ -1,5 +1,3 @@
-import { TSortBy } from "./endpoints";
-
 export interface ITMDBMovie {
   id: number;
   title: string;
