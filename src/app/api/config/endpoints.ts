@@ -8,6 +8,5 @@ export const TMBD_ENDPOINTS = {
  // values for the sort_by parameter
 export type TSortBy = 
   
-  | 'vote_average.desc'
-  | 'primary_release_date.desc'
+  | 'top_rated.desc'
   | 'popularity.desc'
