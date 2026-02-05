@@ -6,7 +6,10 @@ interface CategoryMovieTitleProps {
 
 export function CategoryMovieTitle({ children }: CategoryMovieTitleProps){
   return (
-      <Typography variant="H1" className="font-bold text-white">
+      <Typography 
+        variant="H1" 
+        className="font-bold text-white"
+      >
         {children}
       </Typography>
   )

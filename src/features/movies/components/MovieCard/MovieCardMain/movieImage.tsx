@@ -22,7 +22,7 @@ export function MovieImage({
       alt={alt}
       width={width}
       height={height}
-      className={twMerge("rounded-2xl shadow-2xl", className)}
+      className={twMerge("rounded-2xl", className)}
     />
   )
 }

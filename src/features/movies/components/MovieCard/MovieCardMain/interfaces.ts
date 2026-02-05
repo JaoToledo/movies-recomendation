@@ -7,6 +7,7 @@ export interface Movie {
 
 export interface MovieCardMainProps {
   movies: Movie[]
+  title?: string,
 }
 
 export interface TitleProps {
