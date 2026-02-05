@@ -7,10 +7,3 @@ datasource db {
   provider = "postgresql"
 }
 
-model Movies {
-  id            String         @id @default(uuid())
-  img           String?
-  desc          String         @db.Text     
-  title         String     
-  CreatedAt     DateTime       @default(now()) 
-}

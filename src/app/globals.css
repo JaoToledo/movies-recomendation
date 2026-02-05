@@ -22,3 +22,5 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@plugin 'tailwind-scrollbar';
