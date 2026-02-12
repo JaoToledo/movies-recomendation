@@ -49,16 +49,111 @@ O projeto adota uma arquitetura orientada a features, estruturando cada funciona
 └───shared/
     ├───components/     
     └───utils/
-    ```
+```
 
-## 📌 Progresso do Projeto
-✔️ Configuração inicial do ambiente de frontend (Estrutura de Pastas e Componentes Base).
+## Componentização
 
-✔️ Configuração de Vitest para testes unitários.
+A componentização do projeto aborda boas práticas, como obter a propriedade className em todos os componentes para serem flexíveis à estilizações.
 
-✔️ Configuração e integração do TailwindCSS para estilização rápida e responsiva.
+```
+import { Filter } from "lucide-react";
+import { FilterMoviesProps } from "./types";
+import clsx from "clsx";
 
-✔️ Criação do componente base Typography e teste unitário.
+
+export function FilterMovies({className = ""}: FilterMoviesProps) {
+  return (
+    <div className={clsx("",className)}>
+      
+      <button className="flex cursor-pointer">
+        <Filter color="white" />
+      </button>
+    </div>
+  )
+}
+```
+
+Também é utilizado o método composite pattern, que é a forma como os componentes são estruturados.
+
+### Como criar um componente
+
+```
+├───components
+│   ├───HeaderComposition
+│   │   ├───filter
+│   │   ├───input
+│   │   ├───root
+│   │   └───searchInput
+|   ├───index.tsx   
+```
+
+O componente é formado de forma separada, e cada parte atua de maneira independente. 
+
+```
+import { Search } from "lucide-react"
+
+/**
+ * Botão de pesquisa do header.
+ * @returns {JSX.Element} Botão de pesquisa clicável.
+ */
+
+export function SearchInputButton() {
+  return (
+      <button
+      onSubmit={() => {}}
+      className="
+    bg-light-gray 
+      h-8 cursor-pointer px-4 rounded-r-[20px] flex justify-center items-center  " 
+      >  
+        <Search color="white" size={28} className="" />
+      </button>
+  )
+}
+```
+
+Exportado para dentro do index da pasta do componente.
+
+```
+"use client"
+
+import { Root } from './root/root'
+import { Input } from './input/input'
+import { SearchInputButton } from './searchInput/searchInputButton'
+import { FilterMovies } from './filter/filterMovies'
+
+  export const Header = {
+  Root,
+  Input,
+  FilterMovies,
+  SearchInputButton
+  }
+```
+
+E por fim, montando o componente por partes
+
+```
+import { Container } from "@/shared/components/Container/Container";
+import { AlertBadge } from "./components/AlertBadge/AlertBadge";
+
+export default function HomePage(){
+  return(
+    <div className="min-h-screen bg-linear-to-b from-linear-black to-linear-gray from-10%">
+
+      <div className="flex justify-center py-16">
+        <AlertBadge />
+      </div>
+
+      <div className="flex justify-center">
+        <Container className="p-[75px]">
+          <div></div>
+        </Container>
+      </div>
+
+    </div>
+  );
+}
+``` 
+
 
 ## ✨ Roadmap (Próximas Etapas - V2)
 - Após a conclusão do MVP, o projeto será expandido com as seguintes funcionalidades:

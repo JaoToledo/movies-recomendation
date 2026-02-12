@@ -1,5 +1,3 @@
-"use client"
-
 /**
  * Wrap do componente header.
  * Recebe a propriedade children para os elementos do header.
@@ -13,10 +11,10 @@ export function Root({children}:{children: React.ReactNode}){
   return(
     <div 
       data-testid="header"
-      className="bg-header-bg py-4 w-full flex justify-center items-center sticky top-0"
+      className="bg-header-bg py-4 w-full "
       >
         {children}
     </div>
   )
 
-}
+}   

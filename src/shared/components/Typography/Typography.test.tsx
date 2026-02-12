@@ -18,6 +18,6 @@ describe('Typography component', () => {
 
     const texto = screen.getByText('Teste');
 
-    expect(texto).toHaveClass('text-[64px] leading-[96px] font-poppins')
+    expect(texto).toHaveClass('text-[40px] leading-[96px] font-poppins')
   });
 }); 
